@@ -1,0 +1,299 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #000;
+  color-scheme: dark;
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #000;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+a {
+  color: inherit;
+}
+
+.hero,
+main {
+  width: min(100% - 48px, 560px);
+  margin-inline: auto;
+}
+
+.hero {
+  min-height: 600px;
+  padding-top: 38px;
+  text-align: center;
+}
+
+.hero-title {
+  position: relative;
+  width: 80%;
+  aspect-ratio: 360 / 230;
+  margin-inline: auto;
+}
+
+.hero-logo {
+  position: absolute;
+  z-index: 3;
+
+  width: 100%;
+  height: auto;
+
+  left: 0;
+  top: 0;
+}
+
+.hero-globe {
+  position: absolute;
+  z-index: 1;
+
+  width: 50%;
+
+  right: 0;
+  top: 4%;
+
+  transform: rotate(-8deg);
+}
+
+.hero-accessory {
+  position: absolute;
+  z-index: 2;
+
+  width: 30%;
+
+  left: -20%;
+  bottom: -5%;
+
+  transform: rotate(-15deg);
+}
+
+h1 {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  font-size: clamp(3rem, 13vw, 4.25rem);
+  line-height: .98;
+  letter-spacing: -.04em;
+}
+
+.region {
+  position: absolute;
+  z-index: 3;
+  right: -45px;
+  bottom: -43px;
+  transform: rotate(-5deg);
+}
+
+.region span {
+  display: block;
+  padding: 7px 12px 5px;
+  border-radius: 10px;
+  background: #ffea00;
+  color: #000;
+  font: 700 1.75rem/1.05 ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.register {
+  display: block;
+  width: 105px;
+  margin: 96px auto 6px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: #0a84ff;
+  text-decoration: none;
+}
+
+.register:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 4px;
+}
+
+.dates {
+  margin: 0;
+  font-size: .85rem;
+}
+
+.hero-art {
+  position: relative;
+  height: 225px;
+  overflow: hidden;
+}
+
+section {
+  position: relative;
+  margin-bottom: 36px;
+}
+
+h2 {
+  margin: 0 0 3px;
+  font-size: 1.55rem;
+  line-height: 1.05;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+p {
+  margin: 0 0 18px;
+}
+
+mark {
+  padding: 0;
+  background: transparent;
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-color: #d8d338;
+  text-decoration-thickness: 2px;
+}
+
+ul {
+  margin-top: -12px;
+}
+
+.section-art {
+  position: absolute;
+  right: 0;
+}
+
+.who-graduation {
+  rotate: 10deg;
+}
+
+.timeline {
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.timeline li {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 8px;
+  align-items: start;
+  margin-bottom: 25px;
+}
+
+.timeline img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.timeline p,
+.cities p {
+  margin: 0;
+}
+
+.cities {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px 10px;
+  margin-top: 10px;
+}
+
+.cities article {
+  min-width: 0;
+}
+
+.city-image {
+  display: grid;
+  place-items: center;
+  min-height: 128px;
+  padding: 8px;
+  border-radius: 13px;
+  background: #292929;
+}
+
+.city-image img {
+  display: block;
+  max-width: 100%;
+  height: 110px;
+  object-fit: contain;
+}
+
+.cities h3 {
+  margin-top: 5px;
+}
+
+.who-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.who-text {
+  flex: 1;
+}
+
+.who-art {
+  flex: 0 0 30%;
+}
+
+.who-art img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 430px) {
+  .hero,
+  main {
+    width: min(100% - 32px, 560px);
+  }
+
+  .hero {
+    min-height: 565px;
+  }
+
+  h1 {
+    font-size: clamp(2.7rem, 13vw, 3.6rem);
+  }
+
+  .region {
+    right: -20px;
+  }
+
+  .region span {
+    font-size: 1.35rem;
+  }
+}
+
+@media (min-width: 720px) {
+  .hero,
+  main {
+    width: min(100% - 64px, 720px);
+  }
+
+  .cities {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .who-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .who-art {
+    width: 40%;
+    align-self: center;
+  }
+}
+
+/* footer */
+footer {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  width: 100%;
+  align-items: center;
+}
