@@ -193,6 +193,10 @@ ul {
   margin: 0;
 }
 
+.cities > a {
+  text-decoration: none;
+}
+
 .cities {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
