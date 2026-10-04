@@ -208,6 +208,39 @@ ul {
   min-width: 0;
 }
 
+.cities-scroll {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  margin-top: 10px;
+
+  overflow-x: auto;
+  width: 100%;
+
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Older Edge/IE */
+}
+
+.cities-scroll::-webkit-scrollbar {
+  display: none; /* Safari + Chrome */
+}
+
+.cities-scroll > * {
+  flex: 0 0 auto;
+}
+
+.cities-scroll p {
+  margin: 0;
+}
+
+.cities-scroll > a {
+  text-decoration: none;
+}
+
+.cities-scroll article {
+  min-width: 200px;
+}
+
 .city-image {
   display: grid;
   place-items: center;
