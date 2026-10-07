@@ -334,3 +334,12 @@ footer {
   width: 100%;
   align-items: center;
 }
+
+/* disable long-press to save images (iOS callout, Android context menu) */
+.no-image-save img {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
+}
