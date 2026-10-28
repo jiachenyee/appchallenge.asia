@@ -110,6 +110,15 @@ h1 {
   text-decoration: none;
 }
 
+.register-wide {
+  width: fit-content;
+}
+
+.register-note {
+  margin: 0 0 6px;
+  font-size: .85rem;
+}
+
 .register:focus-visible {
   outline: 3px solid #fff;
   outline-offset: 4px;
