@@ -352,3 +352,15 @@ footer {
   -webkit-user-drag: none;
   pointer-events: none;
 }
+
+.sponsors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: center;
+}
+
+.sponsors img {
+  display: block;
+  height: 28px;
+}
