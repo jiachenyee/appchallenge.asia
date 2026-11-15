@@ -11,7 +11,7 @@ Static marketing site for the **Asia Student App Challenge** (appchallenge.asia)
 ```
 index.html        Root landing page (all-Asia), links to city pages
 sg/index.html     Singapore  — live, the reference page (lang="en")
-my/index.html     Malaysia   — draft, many TODOs (lang="en")
+my/index.html     Malaysia   — live (lang="en")
 tw/index.html     Taiwan     — Traditional Chinese (lang="zh-Hant-TW"), body.no-image-save
 jp/index.html     Japan      — Japanese (lang="ja")
 styles.css        Single shared stylesheet (dark theme, mobile-first, max width 560px)
