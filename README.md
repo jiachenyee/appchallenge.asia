@@ -10,7 +10,7 @@ Students build an app, individually with Xcode or Swift Playground, that can be 
 |------|------|----------|--------|
 | [`/`](index.html) | All of Asia | English | Live |
 | [`/sg/`](sg/index.html) | Singapore | English | Live, registration open |
-| [`/my/`](my/index.html) | Kuala Lumpur, Malaysia | English | Draft (TODOs) |
+| [`/my/`](my/index.html) | Kuala Lumpur, Malaysia | English | Live |
 | [`/tw/`](tw/index.html) | Taipei, Taiwan | 繁體中文 | Draft (TODOs) |
 | [`/jp/`](jp/index.html) | Tokyo, Japan | 日本語 | Draft |
 
